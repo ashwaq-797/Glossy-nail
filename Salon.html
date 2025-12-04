@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Glossy Nail - Booking & Ready Nail Sets</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #fff8fb;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+        header {
+            background-color: #f7c7da;
+            padding: 15px 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+ .logo img {
+            width: 120px;
+            height: auto;
+            display: block;
+            margin: auto;
+            filter: drop-shadow(0px 1px 3px rgba(0,0,0,0.05));
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            margin: 0 12px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+ /* HERO */
+        .hero {
+            text-align: center;
+            padding: 40px 10px 30px;
+        }
+
+        .hero h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: #b31462;
+        }
+
+        .hero p {
+            margin-bottom: 20px;
+        }
+
+        .btn-group {
+            margin-top: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 18px;
+            margin: 5px;
+            border-radius: 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+        }
+ .btn-primary {
+            background-color: #b31462;
+            color: #fff;
+        }
+
+        .btn-secondary {
+            background-color: #ffffff;
+            color: #b31462;
+            border: 1px solid #b31462;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        /* SECTIONS */
+        section {
+            margin: 30px 0;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.04);
+        }
+ section h2 {
+            margin-bottom: 15px;
+            font-size: 22px;
+            border-bottom: 2px solid #f7c7da;
+            padding-bottom: 5px;
+            color: #b31462;
+        }
+
+        section p {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        form {
+            margin-top: 10px;
+        }
+
+        .form-row {
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            font-size: 13px;
+            margin-bottom: 3px;
+        }
+ input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        input[type="date"],
+        input[type="time"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 13px;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 70px;
+        }
+
+        /* PRODUCTS */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+ .product-card {
+            background-color: #fff8fb;
+            border-radius: 10px;
+            padding: 15px;
+            border: 1px solid #f3d6e4;
+        }
+
+        .product-card h3 {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .product-price {
+            font-weight: bold;
+            color: #b31462;
+            margin: 5px 0;
+        }
+
+        .product-desc {
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+
+        /* FOOTER */ 
+footer {
+            text-align: center;
+            font-size: 12px;
+            padding: 15px 0;
+            color: #777;
+        }
+ </style>
+</head>
+<body>
+
+    <!-- HEADER WITH LOGO -->
+    <header>
+        <div class="logo">
+            <img src="C:\Users\ashwa\Downloads\WhatsApp Image 2025-11-18 at 14.44.46_4fb3bb7f.jpg" alt="Glossy Nails Logo">
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#booking">Book Appointment</a>
+            <a href="#shop">Ready Nail Sets</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <!-- HERO SECTION -->
+        <section id="home" class="hero">
+            <h1>Glossy Nail</h1>
+            <p>Beauty at your fingertips – Book your nail appointment or shop ready nail sets online 💅</p>
+            <div class="btn-group">
+                <a href="#booking" class="btn btn-primary">Book Appointment</a>
+                <a href="#shop" class="btn btn-secondary">Shop Now</a>
+            </div>
+ </section>
+
+        <!-- BOOKING SECTION -->
+        <section id="booking">
+            <h2>Book Nail Appointment</h2>
+            <p>Fill in the form below to choose your preferred service and time.</p>
+
+            <form>
+                <div class="form-row">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Example: Kay Marlina">
+                </div>
+
+                <div class="form-row">
+                    <label>Mobile Number</label>
+                    <input type="tel" placeholder="05XXXXXXXX">
+                </div>
+
+                <div class="form-row">
+                    <label>Date</label>
+                    <input type="date">
+                </div>
+
+                <div class="form-row">
+                    <label>Time</label>
+                    <input type="time">
+                </div>
+<div class="form-row">
+                    <label>Service Type</label>
+                    <select>
+                        <option>-- Choose Service --</option>
+                        <option>Classic Manicure</option>
+                        <option>Gel Manicure</option>
+                        <option>Nail Art Design</option>
+                        <option>Extensions</option>
+                        <option>Pedicure</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit Booking</button>
+            </form>
+        </section>
+
+        <!-- SHOP SECTION -->
+        <section id="shop">
+            <h2>Ready Nail Sets</h2>
+            <p>Choose from our premium ready-to-wear nail sets.</p>
+
+            <div class="products">
+                <div class="product-card">
+                    <h3>Classic Nude Set</h3>
+                    <p class="product-price">89 SAR</p>
+                    <p class="product-desc">Perfect everyday nude nails.</p>
+                    <button class="btn btn-secondary">Add to Cart</button>
+                </div>
+ <div class="product-card">
+                    <h3>French Glam Set</h3>
+                    <p class="product-price">99 SAR</p>
+                    <p class="product-desc">Elegant French nails for special events.</p>
+                    <button class="btn btn-secondary">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <h3>Pink Princess Set</h3>
+                    <p class="product-price">95 SAR</p>
+                    <p class="product-desc">Soft pink shades for a feminine look.</p>
+                    <button class="btn btn-secondary">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>For questions or bookings, send us a message below:</p>
+
+            <form>
+                <div class="form-row">
+                    <label>Name</label>
+                    <input type="text">
+                </div> 
+<div class="form-row">
+                    <label>Email</label>
+                    <input type="email">
+                </div>
+<div class="form-row">
+                    <label>Message</label>
+                    <textarea></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+
+            <p style="margin-top: 15px; font-size: 13px;">
+                Instagram: @glossy.nail • WhatsApp: 05XXXXXXXX • Location: Yanbu Industrial City
+            </p>
+        </section>
+
+    </div>
+
+    <footer>
+        © 2025 Glossy Nail - E-Commerce Project (MIS343)
+    </footer>
+
+</body>
+</html>
